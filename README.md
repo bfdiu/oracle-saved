@@ -8,7 +8,7 @@ echo "1" | sudo tee /sys/class/block/`readlink /dev/oracleoci/oraclevda | cut -d
 
 sudo -i
 
-echo root:NWezEgU382 |chpasswd root
+echo root:NWezEgU |chpasswd root
 
 sudo sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config
 
